@@ -29,6 +29,11 @@ strong
 
 }
 
+a:link 
+{ 
+    text-decoration: none;
+} 
+
 /*logo + menu*/
 
 #haut_de_page
