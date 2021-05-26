@@ -51,7 +51,7 @@ a:link
 #inscription
 {
     font-weight: bold;
-    color: blue;
+    color: #0065fc;
 }
 
 .filtres
@@ -96,7 +96,7 @@ ul
 
 .body
 {
-    background-color: rgb(221, 221, 221);
+    background-color: #f1f1f1;
     display: inline-block;
     padding: 1em; /*bordure intérieure*/
     border-radius: 2em; /*arondissement des coins*/
@@ -240,7 +240,7 @@ ul
 
 footer
 {
-    background-color: rgb(221, 221, 221);
+    background-color: #f2f2f2;
     padding-top: 1em;
     padding-left: 4em;
     padding-right: 2em;
@@ -260,7 +260,7 @@ footer
 
 .blue
 {
-    color: blue;
+    color: #0065fc;
 }
 
 .grey
