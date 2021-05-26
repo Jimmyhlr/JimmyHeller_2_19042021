@@ -29,10 +29,28 @@ strong
 
 }
 
+/*lien hypertextes*/
+
 a:link 
 { 
     text-decoration: none;
-} 
+    color: black;
+}
+
+a:visited 
+{
+    color: black;
+}
+
+a:hover 
+{
+    color: #0065fc;
+}
+
+a:active 
+{
+    color: #0065fc;
+}
 
 /*logo + menu*/
 
@@ -63,7 +81,7 @@ a:link
 {
     margin: 0.5em;
     padding-right: 1em;
-    border: 0.2px solid grey;
+    border: 0.1em solid #d9d9d9;
     border-radius: 2em;
 }
 
@@ -140,38 +158,41 @@ ul
                 {
                     max-width: 100%;
                     overflow: clip;
+                    object-fit: cover; /*rogne l'image*/
                     border-top-left-radius: 1em;
                     border-top-right-radius: 1em;
-                    object-fit: cover; /*rogne l'image*/
                 }
 
                 .text1
                 {
-                    padding: 0.4em;
+                    padding: 0.6em;
                 }
 
 
 
     .les_plus_populaires
     {
-        width: auto
+        width: auto;
         height: auto;
         float: right;
     }
 
         .body2
         {
-            
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
         }
 
             .sous_body2
             {
-                margin: 1em;
-                padding: 1em; /*bordure intérieure*/
-                border-radius: 2em;
+                margin: 0.5em;
+                padding: 0.2em; /*bordure intérieure*/
+                border-radius: 1em;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
                 background-color: white;
                 width: 20em;
+                height: 8em;
 
                 display: flex;
                 flex-direction: row;
@@ -180,17 +201,16 @@ ul
 
                 .img2
                 {
-                    max-width: 100%;
-                    max-height: 10em;
+                    width: 30%;
                     overflow: clip;
+                    object-fit: cover; /*rogne l'image*/
                     border-top-left-radius: 1em;
                     border-bottom-left-radius: 1em;
-                    object-fit: cover; /*redimension de l'image sans la déformer */
                 }
 
                 .text2
                 {
-
+                    padding: 0.4em;
                 }
 
 
@@ -255,6 +275,7 @@ footer
 .colone
 {
     padding-right: 15em;
+    line-height: 2em; /*taille des espaces interlignes*/
 }
 
 
@@ -265,7 +286,12 @@ footer
 
 .grey
 {
-    color: rgb(199, 199, 199);
+    color: #d9d9d9;
+}
+
+.bottom
+{
+    
 }
 
 .blue_background
@@ -277,30 +303,11 @@ footer
     border-radius: 2em;
 }
 
-
-    /*
-   li 
-   {
-    margin-left:2px;
-    float:left;
-    }
-   ul li a {
-    display:block;
-    float:left;   
-    width:100px;
-    background-color:#6495ED;
-    color:black;
-    text-decoration:none;
-    text-align:center;
-    padding:5px;
-    border:2px solid;
-    
-    border-color:#DCDCDC #696969 #696969 #DCDCDC;
-    }
-   ul li a:hover {
-    background-color:#D3D3D3;
-    border-color:#696969 #DCDCDC #DCDCDC #696969;
-    }
-
-    */
-    
+.circle
+{
+    border: 0.02em solid #d9d9d9;
+    border-radius: 50%;
+    height: 1.1em;
+    width: 1.1em;
+    text-align: center;
+}   
