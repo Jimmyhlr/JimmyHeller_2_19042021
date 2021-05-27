@@ -13,15 +13,9 @@ header, main
     padding-right: 2em;
 }
 
-h1, h2
+h1, h2, h3
 {
     font-size: 1.2em;
-}
-
-h3
-{
-    margin: 0px;
-    padding: 0px;
 }
 
 strong
@@ -66,12 +60,6 @@ a:active
     min-width: 100px;
 }
 
-#inscription
-{
-    font-weight: bold;
-    color: #0065fc;
-}
-
 .filtres
 {
     display: flex;
@@ -100,8 +88,13 @@ ul
 
 .menu
 {
-    margin-left:2px;
-    float:left;
+    padding-left: 4em;
+    float: left;
+}
+
+.menu_inscription:link
+{
+    color: #0065fc;
 }
 
 .logo_les_plus_populaires
@@ -216,42 +209,65 @@ ul
 
     .activites_a_marseille
     {
-        margin-top: 2.5em;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 
         .body3
         {
+            height: 30em;
             display: flex;
-            flex-flow: wrap;
+            flex-flow: column wrap;
             justify-content: space-between ;
         }
 
             .sous_body3
             {
-                margin: 1em;
-                padding: 1em; /*bordure intérieure*/
-                border-radius: 2em;
+                border-radius: 1em;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
                 background-color: white;
                 width: 20em;
 
+                overflow: clip;
+                object-fit: cover; /*rogne l'image*/
+
                 display: flex;
-                flex-direction: column;
+                flex-flow: column;
+            }
+
+            .format_portrait
+            {
+                height: 100%;
+            }
+
+            .format_deux_tiers
+            {
+                height: 60%;
+            }
+
+            .format_demi
+            {
+                height: 45%;
+            }
+
+            .format_tiers
+            {
+                height: 30%;
             }
 
                 .img3
                 {
-                    max-width: 100%;
-                    max-height: 10em;
+                    min-width: 100%;
                     overflow: clip;
+                    object-fit: cover; /*rogne l'image*/
+                    align-self: center;
                     border-top-left-radius: 1em;
-                    border-top-right-radius: 1em;
-                    object-fit: cover; /*redimension de l'image sans la déformer */
+                    border-top-right-radius: 1em;                   
                 }
 
                 .text3
                 {
-
+                    margin: 1em;                    
                 }
 
 
