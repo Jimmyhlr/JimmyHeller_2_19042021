@@ -13,9 +13,15 @@ header, main
     padding-right: 3em;
 }
 
-h1, h2, h3
+h1, h2, h3, h4
 {
     font-size: 1.2em;
+}
+
+h4
+{
+    line-height: 1em;
+    margin: 0em;
 }
 
 strong
@@ -122,6 +128,13 @@ ul
     vertical-align: top;
 }
 
+.equalizer
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
     .hebergements_a_marseille
     {
         width: auto;
@@ -147,7 +160,7 @@ ul
                 border-radius: 1em;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
                 background-color: white;
-                width: 17em;
+                width: 18em;
                 height: 13em;
         
                 display: flex;
@@ -167,6 +180,7 @@ ul
                 .text1
                 {
                     padding: 0.6em;
+                    line-height: 1.5em;
                 }
 
 
@@ -175,7 +189,6 @@ ul
     {
         width: auto;
         height: auto;
-        float: right;
     }
 
         .body2
