@@ -196,13 +196,14 @@ ul
                 height: 8em;
 
                 display: flex;
-                flex-direction: row;
+                flex-flow: row;
+                justify-content: space-between;
     
             }
 
                 .img2
                 {
-                    width: 30%;
+                    max-width: 30%;
                     overflow: clip;
                     object-fit: cover; /*rogne l'image*/
                     border-top-left-radius: 1em;
@@ -211,7 +212,7 @@ ul
 
                 .text2
                 {
-                    padding: 0.4em;
+                    padding-left: 0.4em;
                 }
 
 
