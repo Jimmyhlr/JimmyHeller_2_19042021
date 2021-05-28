@@ -138,7 +138,7 @@ ul
     .hebergements_a_marseille
     {
         width: auto;
-        max-width: 66%;
+        max-width: 60%;
         height: auto;
         padding: 2em;
         display: flex;
@@ -154,13 +154,13 @@ ul
 
             .sous_body1
             {
-                margin-top: 0.5em;
-                margin-bottom: 0.5em;
+                margin-top: 1em;
+                margin-bottom: 1em;
                 padding: 0.2em; /*bordure intérieure*/
                 border-radius: 1em;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
                 background-color: white;
-                width: 18em;
+                width: 16em;
                 height: 13em;
         
                 display: flex;
@@ -187,8 +187,9 @@ ul
 
     .les_plus_populaires
     {
-        width: auto;
+        width: 28%;
         height: auto;
+        padding: 2em;
     }
 
         .body2
@@ -200,23 +201,24 @@ ul
 
             .sous_body2
             {
-                margin: 0.5em;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
                 padding: 0.2em; /*bordure intérieure*/
                 border-radius: 1em;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
                 background-color: white;
-                width: 20em;
-                height: 8em;
+                width: inherit;
+                height: 10em;
 
                 display: flex;
                 flex-flow: row;
-                justify-content: space-between;
+                
     
             }
 
                 .img2
                 {
-                    max-width: 30%;
+                    max-width: 40%;
                     overflow: clip;
                     object-fit: cover; /*rogne l'image*/
                     border-top-left-radius: 1em;
@@ -225,7 +227,8 @@ ul
 
                 .text2
                 {
-                    padding-left: 0.4em;
+                    padding: 0.6em;
+                    line-height: 1.5em;
                 }
 
 
@@ -331,7 +334,7 @@ footer
 
 .bottom
 {
-    
+    vertical-align: text-bottom;
 }
 
 .blue_background
