@@ -84,25 +84,64 @@ a:active
 {
     display: flex;
     align-items: center;
+    margin-top: 1em;
 }
 
-.filtre
-{
-    margin: 0.5em;
-    padding-right: 1em;
-    border: 0.1em solid #d9d9d9;
-    border-radius: 2em;
-    display: flex;
-    align-items: center;
-}
+    .filtre2
+    {
+        margin: 0.5em;
+        padding-right: 0.5em;
+        display: flex;
+        align-items: center;
+    }
 
-.filtre2
-{
-    margin: 0.5em;
-    padding-right: 0.5em;
-    display: flex;
-    align-items: center;
-}
+    .filtre
+    {
+        margin: 0.5em;
+        padding-right: 1em;
+        border: 0.1em solid #d9d9d9;
+        border-radius: 2em;
+        display: flex;
+        align-items: center;
+    }
+
+        .blue_background
+        {
+            background-color: #deebff;
+            height: 2em;
+            width: 2em;
+            margin-right: 0.7em;
+            border-radius: 2em;
+            align-items: center;
+            margin: -0.1em;
+            margin-right: 0.7em;
+        }
+
+            .fa-money-bill-wave
+            {
+                padding-top: 0.5em;
+                padding-left: 0.3em;
+            }
+
+            .fa-child
+            {
+                padding-top: 0.5em;
+                padding-left: 0.3em;
+            }
+
+            .fa-heart
+            {
+                padding-top: 0.5em;
+                padding-left: 0.4em;
+            }
+
+            .fa-dog
+            {
+                padding-top: 0.4em;
+                padding-left: 0.3em;
+            }
+
+
 
 ul 
 {
@@ -347,13 +386,7 @@ footer
 
 .blue_background
 {
-    background-color: rgba(98, 98, 255, 0.342);
-    height: 4em;
-    width: 4em;
-    margin: 0px;
-    margin-right: 0.7em;
-    border-radius: 2em;
-    align-items: center;
+
 }
 
 .circle
@@ -371,7 +404,7 @@ footer
 
     .cadre_logo_localisation
     {
-
+        
     }
         .logo_localisation
         {
