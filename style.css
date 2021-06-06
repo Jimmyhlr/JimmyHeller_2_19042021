@@ -84,17 +84,6 @@ a:link
     color: #d9d9d9;
 }
 
-.circle
-{
-    border: 0.02em solid #d9d9d9;
-    border-radius: 50%;
-    height: 1.1em;
-    width: 1.1em;
-    text-align: center;
-}
-
-
-
                     /*----- header -----*/
 
 /*logo Reservia*/
@@ -189,6 +178,12 @@ border-bottom-right-radius: 0.5em;
     margin-top: 1em;
 }
 
+    .filtre3
+    {
+        display: flex;
+        flex-flow: wrap;
+    }
+
     .filtre2
     {
         margin: 0.5em;
@@ -243,7 +238,107 @@ border-bottom-right-radius: 0.5em;
                 padding-left: 0.3em;
             }
 
+@media only screen and (max-device-width: 500px)
+{
+    .filtres
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    
+        .filtre3
+        {
+            display: flex;
+            flex-flow: wrap;
+        }
 
+        .filtre2
+        {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0.5em;
+            padding-right: 0.5em;
+            display: flex;
+            align-self: flex-start;
+        }
+    
+        .filtre
+        {
+            height: auto;
+            width: auto;
+            font-size: 2.5em;
+            margin: 0.5em;
+            padding-right: 1em;
+            border: 0.1em solid #d9d9d9;
+            border-radius: 2em;
+            display: flex;
+            align-items: center;
+        }
+}
+
+/* information */
+
+.info
+{
+    display: flex;
+    margin-top: 1.5em;
+}
+
+    .circle
+    {
+        border: 0.02em solid #d9d9d9;
+        border-radius: 50%;
+        height: 1.2em;
+        width: 1.2em;
+        text-align: center;
+        float: left;
+        vertical-align: center;
+        margin-right: 1em;
+    }
+
+    .info_text
+    {
+
+    }
+
+@media only screen and (max-device-width: 500px)
+{
+    .info
+    {
+
+    }
+   
+        .circle
+        {
+            border: 0.1em solid #d9d9d9;
+            height: 3em;
+            width: 3.5em;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2.6em;
+            float: none;
+        }
+            
+            .fa-info
+            {
+                font-size: 2em;
+                line-height: 5em;
+            
+
+                /* pour device-width=500px */
+                /*
+                position: absolute;
+                bottom: 32.3em;
+                left: 4.2em;
+                */
+            }
+
+        .info_text
+        {
+            font-size: 2.5em;
+        }
+}
 
 /*-------------------- main --------------------*/
 
@@ -369,15 +464,28 @@ border-bottom-right-radius: 0.5em;
         }
 }
 
-@media only screen and (min-device-width: 501px)
-{
     .les_plus_populaires
     {
-        width: 28%;
-        height: auto;
-        padding: 2em;
+        background-color: #f1f1f1;
     }
-}
+
+    @media only screen and (min-device-width: 501px)
+    {
+        .les_plus_populaires
+        {
+            width: 28%;
+            height: auto;
+            padding: 2em;
+        }
+    }
+
+    @media only screen and (max-device-width: 500px)
+    {
+        .les_plus_populaires
+        {
+
+        }
+    }
 
         .logo_les_plus_populaires
         {
@@ -392,6 +500,8 @@ border-bottom-right-radius: 0.5em;
             align-content: space-between;
         }
 
+        @media only screen and (min-device-width: 501px)
+        {
             .sous_body2
             {
                 margin-top: 0.5em;
@@ -405,6 +515,25 @@ border-bottom-right-radius: 0.5em;
 
                 display: flex;
                 flex-flow: row;             
+            }
+        }
+
+            @media only screen and (max-device-width: 500px)
+            {
+                .sous_body2
+                {
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
+                    padding: 0.2em; /*bordure intérieure*/
+                    border-radius: 1em;
+                    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
+                    background-color: white;
+                    width: inherit;
+                    height: 20em;
+
+                    display: flex;
+                    flex-flow: row;
+                }
             }
 
                 .img2
@@ -423,6 +552,14 @@ border-bottom-right-radius: 0.5em;
                     display: flex; 
                     flex-direction: column;
                     justify-content: space-between;              
+                }
+
+                @media only screen and (max-device-width: 500px)
+                {
+                    .text2
+                    {
+                        font-size: 2.5em;
+                    }
                 }
 
     .activites_a_marseille
