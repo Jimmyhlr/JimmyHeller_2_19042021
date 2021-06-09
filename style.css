@@ -1,18 +1,55 @@
-                    /*----- body, police et liens -----*/
+/*-------------------- body, police et liens --------------------*/
 
 /*body*/
 
-body
+@media only screen and (min-device-width: 501px)
 {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    body
+    {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header, main
+    {
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-bottom: 2em;
+    }
 }
 
-header, main
+@media only screen and (max-device-width: 500px)
 {
-    padding-left: 3em;
-    padding-right: 3em;
-    margin-bottom: 2em;
+
+    body
+    {
+        margin: 0px;
+    }
+
+    main,
+    {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    #haut_de_page, .entête, form, .filtres, .info, .hebergements_a_marseille, .activites_a_marseille
+    {
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 2em;
+    }
+
+    .body1
+    {
+        padding: 0em;
+    }
+
+    .les_plus_populaires
+    {
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-bottom: 2em;    
+    }
 }
 
 /*titres*/
@@ -30,6 +67,18 @@ h2, h3
 
 @media only screen and (max-device-width: 500px)
 {
+    h1
+    {
+        font-size: 4em;
+        line-height: 1em;
+    }
+
+    p
+    {
+        font-size: 2em;
+        line-height: 1em;
+    }
+
     h2, h3
     {
         font-size: 4em;
@@ -84,14 +133,13 @@ a:link
     color: #d9d9d9;
 }
 
-                    /*----- header -----*/
+/*-------------------- header --------------------*/
 
 /*logo Reservia*/
 
 #haut_de_page
 {
-    display: flex; /*permet de réagencer les éléments*/
-    justify-content: space-between; /*étire les éléments sur tout l'axe*/
+    display: flex;
 }
 
 .logo
@@ -102,28 +150,118 @@ a:link
     padding-bottom: 1em;
 }
 
-/*menu*/
-
-ul 
+.logo2
 {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    flex-grow: 22;
 }
 
-    .menu
+@media only screen and (max-device-width: 500px)
+{
+    #haut_de_page
     {
-        width: 10em;
-        padding-top: 2em;
-        float: left;
-        text-align: center;
+        display: flex;
     }
 
-        .menu_actif
+    .logo
+    {
+        font-size: 2.5em;
+        padding-top: 1em;
+        flex-grow: none;
+    }
+}
+
+/*menu*/
+
+@media only screen and (min-device-width: 501px)
+{
+    ul 
+    {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    nav
+    {
+        float: inline-end;
+        /*flex-grow: 1;*/
+    }
+
+        .menu_inscription
         {
-            border-top: 0.2em solid #0065fc;
-            border-spacing: 2em;
+            padding-top: 2.2em;
+            padding-left: 2em;
+            color: #0065fc;
+            float: inline-end;
+            /*flex-grow: 1;*/
         }
+
+        .menu
+        {
+            width: 10em;
+            padding-top: 2em;
+            text-align: center;
+            display: inline-block;
+            /*flex-grow: 20;*/
+        }
+
+            .menu_actif
+            {
+                border-top: 0.2em solid #0065fc;
+                border-spacing: 2em;
+            }
+}
+
+@media only screen and (max-device-width: 500px)
+{
+    ul 
+    {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    
+    nav
+    {
+        float: inline-end;
+        /*flex-grow: 1;*/
+    }
+            
+        .menu_inscription
+        {
+            font-size: 2.5em;
+            padding-top: 2.2em;
+            color: #0065fc;
+            float: inline-end;
+            /*flex-grow: 1;*/
+        }
+            
+        .menu
+        {
+            float: left;
+            width: 50%;
+            padding-top: 0em;
+            padding-bottom: 1em;
+            margin-bottom: 2em;
+            font-size: 2.5em;
+            text-align: center;
+            /*flex-grow: 20;*/
+        }
+
+            .menu_actif
+            {
+                border-top: none;
+                border-bottom: 0.2em solid #0065fc;
+                border-spacing: 2em;
+            }
+
+            .menu_inactif
+            {
+                border-top: none;
+                border-bottom: 0.2em solid #f1f1f1;
+                border-spacing: 2em;           
+            }
+}
 
 /*barre de recherche*/
 
@@ -168,6 +306,31 @@ border-bottom-right-radius: 0.5em;
         border-top-right-radius: 0.5em;
         border-bottom-right-radius: 0.5em;
     }
+
+@media only screen and (max-device-width: 500px)
+{
+    .logo_localisation
+    {
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        font-size: 2em;
+    }
+    
+    .localisation
+    {
+        margin-top: 1.5em;
+        font-size: 2em;
+    }
+    
+    .rechercher
+    {
+        margin-top: 1.5em;
+        font-size: 2em;
+    }
+}
 
 /*filtres*/
 
@@ -423,9 +586,10 @@ border-bottom-right-radius: 0.5em;
 {
     .hebergements_a_marseille
     {
-        width: 100%;
         height: auto;
         background-color: white;
+        padding-top: 1.5em;
+        padding-bottom: 4em;
     }
 
         .sous_body1
@@ -483,7 +647,11 @@ border-bottom-right-radius: 0.5em;
     {
         .les_plus_populaires
         {
-
+            width: auto;
+            padding-left: 3em;
+            padding-right: 3em;
+            padding-top: 1.5em;
+            padding-bottom: 4em;
         }
     }
 
