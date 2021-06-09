@@ -183,14 +183,15 @@ a:link
 
     nav
     {
-        float: inline-end;
+        position: absolute;
+        top: 0%;
+        right: 10%;
         /*flex-grow: 1;*/
     }
 
         .menu_inscription
         {
             padding-top: 2.2em;
-            padding-left: 2em;
             color: #0065fc;
             float: inline-end;
             /*flex-grow: 1;*/
