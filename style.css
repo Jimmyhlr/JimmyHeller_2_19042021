@@ -526,7 +526,7 @@ border-bottom-right-radius: 0.5em;
     }
 }
 
-@media only screen and (min-device-width: 501px)
+@media only screen and (min-device-width: 1201px)
 {
     .equalizer
     {
@@ -560,7 +560,7 @@ border-bottom-right-radius: 0.5em;
                 border-radius: 1em;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
                 background-color: white;
-                width: 16em;
+                width: 30%;
                 height: 13em;
         
                 display: flex;
@@ -581,6 +581,61 @@ border-bottom-right-radius: 0.5em;
                     padding: 0.6em;
                     line-height: 1.5em;
                 }
+}
+
+@media only screen and (max-device-width: 1200px)
+{
+    .equalizer
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .hebergements_a_marseille
+    {
+        margin-top: 2em;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .body1
+        {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+        }
+
+            .sous_body1
+            {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                padding: 0.2em; /*bordure intérieure*/
+                border-radius: 1em;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
+                background-color: white;
+                width: 30%;
+                height: 13em;
+        
+                display: flex;
+                flex-direction: column;
+            }
+
+                .img1
+                {
+                    max-width: 100%;
+                    overflow: clip;
+                    object-fit: cover; /*rogne l'image*/
+                    border-top-left-radius: 1em;
+                    border-top-right-radius: 1em;
+                }
+
+                .text1
+                {
+                    padding: 0.6em;
+                    line-height: 1.5em;
+                } 
 }
 
 @media only screen and (max-device-width: 500px)
@@ -634,7 +689,7 @@ border-bottom-right-radius: 0.5em;
         background-color: #f1f1f1;
     }
 
-    @media only screen and (min-device-width: 501px)
+    @media only screen and (min-device-width: 1201px)
     {
         .les_plus_populaires
         {
@@ -669,23 +724,52 @@ border-bottom-right-radius: 0.5em;
             align-content: space-between;
         }
 
-        @media only screen and (min-device-width: 501px)
+        @media only screen and (min-device-width: 501px) and (max-device-width: 1200px)
         {
-            .sous_body2
+            .body2
             {
-                margin-top: 0.5em;
-                margin-bottom: 0.5em;
-                padding: 0.2em; /*bordure intérieure*/
-                border-radius: 1em;
-                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
-                background-color: white;
-                width: inherit;
-                height: 10em;
-
                 display: flex;
-                flex-flow: row;             
-            }
+                flex-direction: row;
+                justify-content: space-between;
+            }            
         }
+
+            @media only screen and (min-device-width: 1201px)
+            {
+                .sous_body2
+                {
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
+                    padding: 0.2em; /*bordure intérieure*/
+                    border-radius: 1em;
+                    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
+                    background-color: white;
+                    width: inherit;
+                    height: 10em;
+
+                    display: flex;
+                    flex-flow: row;             
+                }
+            }
+
+            @media only screen and (min-device-width: 501px) and (max-device-width: 1200px)
+            {
+                .sous_body2
+                {
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
+                    padding: 0.2em; /*bordure intérieure*/
+                    border-radius: 1em;
+                    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
+                    background-color: white;
+                    max-width: 30%;
+                    height: 10em;
+
+                    display: flex;
+                    flex-flow: row;   
+                }
+
+            }
 
             @media only screen and (max-device-width: 500px)
             {
@@ -713,6 +797,19 @@ border-bottom-right-radius: 0.5em;
                     border-top-left-radius: 1em;
                     border-bottom-left-radius: 1em;
                 }
+
+                    @media only screen and (min-device-width: 501px) and (max-device-width: 1200px)
+                    {
+                        .img2
+                        {
+                            max-width: 30%;
+                            min-width: 30%;
+                            overflow: clip;
+                            object-fit: cover; /*rogne l'image*/
+                            border-top-left-radius: 1em;
+                            border-bottom-left-radius: 1em;                         
+                        }
+                    }
 
                 .text2
                 {
