@@ -211,6 +211,13 @@ a:link
                 border-top: 0.2em solid #0065fc;
                 border-spacing: 2em;
             }
+
+            ::placeholder
+            {
+                opacity: 1;
+                font-weight: bolder;
+                color: black;
+            }
 }
 
 @media only screen and (max-device-width: 500px)
