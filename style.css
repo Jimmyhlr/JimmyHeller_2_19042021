@@ -24,6 +24,7 @@
     body
     {
         margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     main,
@@ -289,20 +290,20 @@ a:link
 
 .localisation
 {
-padding: 0.6em;
-border: 0.1em solid #f1f1f1;
-margin-right: -0.4em;
-width: 15em;
+    padding: 0.6em;
+    border: 0.1em solid #f1f1f1;
+    margin-right: -0.4em;
+    width: 15em;
 }
 
 .rechercher
 {
-color: white;
-background-color: #0065fc;
-border: 0.1em solid #0065fc;
-padding: 0.6em;
-border-top-right-radius: 0.5em;
-border-bottom-right-radius: 0.5em;
+    color: white;
+    background-color: #0065fc;
+    border: 0.1em solid #0065fc;
+    padding: 0.6em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 
     .rechercher:hover
@@ -315,6 +316,11 @@ border-bottom-right-radius: 0.5em;
         border-bottom-right-radius: 0.5em;
     }
 
+.logo_rechercher
+{
+    visibility: hidden;
+}
+
 @media only screen and (max-device-width: 500px)
 {
     .logo_localisation
@@ -324,19 +330,31 @@ border-bottom-right-radius: 0.5em;
         padding-bottom: 0.6em;
         padding-left: 1.2em;
         padding-right: 1.2em;
-        font-size: 2em;
+        font-size: 3em;
     }
     
     .localisation
     {
         margin-top: 1.5em;
-        font-size: 2em;
+        width: auto;
+        font-size: 3em;
     }
     
     .rechercher
     {
-        margin-top: 1.5em;
-        font-size: 2em;
+        visibility: hidden;
+    }
+
+    .logo_rechercher
+    {
+        visibility: visible;
+        font-size: 3em;
+        color: white;
+        background-color: #0065fc;
+        border: 0em solid #0065fc;
+        padding: 0.7em;
+        margin: -3em;
+        border-radius: 1em;
     }
 }
 
