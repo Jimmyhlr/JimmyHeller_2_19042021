@@ -122,6 +122,11 @@ a:link
     color: #0065fc;
 }
 
+.menu_inscription2 a
+{
+    color: #0065fc;
+}
+
 /*réglages des logos font-awesome*/
 
 .blue
@@ -141,6 +146,7 @@ a:link
 #haut_de_page
 {
     display: flex;
+    justify-content: space-between;
 }
 
 .logo
@@ -149,11 +155,6 @@ a:link
     min-width: 100px;
     padding-top: 2em;
     padding-bottom: 1em;
-}
-
-.logo2
-{
-    flex-grow: 22;
 }
 
 @media only screen and (max-device-width: 500px)
@@ -167,7 +168,6 @@ a:link
     {
         font-size: 2.5em;
         padding-top: 1em;
-        flex-grow: none;
     }
 }
 
@@ -184,7 +184,7 @@ a:link
 
     nav
     {
-        position: absolute;
+        /*position: absolute;
         top: 0%;
         right: 10%;
         /*flex-grow: 1;*/
@@ -194,8 +194,12 @@ a:link
         {
             padding-top: 2.2em;
             color: #0065fc;
-            float: inline-end;
             /*flex-grow: 1;*/
+        }
+
+        .menu_inscription2
+        {
+            visibility: hidden;
         }
 
         .menu
@@ -205,6 +209,11 @@ a:link
             text-align: center;
             display: inline-block;
             /*flex-grow: 20;*/
+        }
+
+        .menu2
+        {
+            visibility: hidden;
         }
 
             .menu_actif
@@ -229,23 +238,30 @@ a:link
         margin: 0;
         list-style-type: none;
     }
-    
-    nav
-    {
-        float: inline-end;
-        /*flex-grow: 1;*/
-    }
             
         .menu_inscription
         {
+            visibility: hidden;
+        }
+
+        .menu_inscription2
+        {
+            position: absolute;
+            top: 0%;
+            right: 10%;
             font-size: 2.5em;
             padding-top: 2.2em;
             color: #0065fc;
             float: inline-end;
             /*flex-grow: 1;*/
         }
-            
+
         .menu
+        {
+            visibility: hidden;
+        }
+            
+        .menu2
         {
             float: left;
             width: 50%;
