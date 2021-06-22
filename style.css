@@ -58,7 +58,7 @@
 h1
 {
     font-size: 1.3em;
-    line-height: 0em;
+    line-height: 1em;
 }
 
 h2, h3
@@ -180,14 +180,6 @@ a:link
         padding: 0;
         margin: 0;
         list-style-type: none;
-    }
-
-    nav
-    {
-        /*position: absolute;
-        top: 0%;
-        right: 10%;
-        /*flex-grow: 1;*/
     }
 
         .menu_inscription
@@ -611,6 +603,7 @@ a:link
                 .img1
                 {
                     max-width: 100%;
+                    max-height: 8em;
                     overflow: clip;
                     object-fit: cover; /*rogne l'image*/
                     border-top-left-radius: 1em;
@@ -667,7 +660,7 @@ a:link
                 {
                     max-width: 100%;
                     overflow: clip;
-                    object-fit: cover; /*rogne l'image*/
+                    background-size: cover;
                     border-top-left-radius: 1em;
                     border-top-right-radius: 1em;
                 }
@@ -708,7 +701,7 @@ a:link
             {
                 max-width: 100%;
                 overflow: clip;
-                object-fit: cover; /*rogne l'image*/
+                background-size: cover; /*rogne l'image*/
                 border-top-left-radius: 1em;
                 border-top-right-radius: 1em;
             }
@@ -833,6 +826,7 @@ a:link
                 .img2
                 {
                     max-width: 40%;
+                    min-width: 40%;
                     overflow: clip;
                     object-fit: cover; /*rogne l'image*/
                     border-top-left-radius: 1em;
@@ -846,7 +840,7 @@ a:link
                             max-width: 30%;
                             min-width: 30%;
                             overflow: clip;
-                            object-fit: cover; /*rogne l'image*/
+                            background-size: cover; /*rogne l'image*/
                             border-top-left-radius: 1em;
                             border-bottom-left-radius: 1em;                         
                         }
@@ -965,6 +959,29 @@ a:link
                     border-top-left-radius: 1em;
                     border-top-right-radius: 1em;                   
                 }
+
+            @media only screen and (min-width: 501px)
+            {
+                .img3_portrait
+                {
+                    max-height: 90%;
+                }
+
+                .img3_deux_tiers
+                {
+                    max-height: 80%;
+                }
+
+                .imag3_tiers
+                {
+                    max-height: 66%;
+                }
+
+                .img3_demi
+                {
+                    max-height: 78%;
+                }
+            }
 
                 @media only screen and (max-device-width: 500px)
                 {
