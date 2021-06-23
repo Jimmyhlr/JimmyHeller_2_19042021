@@ -2,7 +2,7 @@
 
 /*body*/
 
-@media (min-width: 501px)
+@media (min-width: 833px)
 {
     body
     {
@@ -18,7 +18,7 @@
     }
 }
 
-@media (max-width: 500px)
+@media (max-width: 832px)
 {
 
     body
@@ -35,9 +35,9 @@
 
     #haut_de_page, .entête, form, .filtres, .info, .hebergements_a_marseille, .activites_a_marseille
     {
-        margin-left: 3em;
-        margin-right: 3em;
-        margin-bottom: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
     }
 
     .body1
@@ -49,7 +49,15 @@
     {
         padding-left: 0em;
         padding-right: 0em;
-        margin-bottom: 2em;    
+        margin-bottom: 1em;    
+    }
+}
+
+@media (min-width: 500px) and (max-width: 832px)
+{
+    #haut_de_page
+    {
+        margin-bottom: 3em;
     }
 }
 
@@ -66,33 +74,34 @@ h2, h3
     font-size: 1.2em;
 }
 
-@media (max-width: 500px)
-{
-    h1
-    {
-        font-size: 4em;
-        line-height: 1em;
-    }
-
-    p
-    {
-        font-size: 2em;
-        line-height: 1em;
-    }
-
-    h2, h3
-    {
-        font-size: 4em;
-        padding-bottom: 0.5em;
-    }
-}
-
 h4
 {
     font-size: 1.2em;
     line-height: 1em;
     margin: 0em;
 }
+
+@media (max-width: 500px)
+{
+    h1
+    {
+        font-size: 1.7em;
+        line-height: 1em;
+    }
+
+    p
+    {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    h2, h3
+    {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+}
+
 
 /*lien hypertextes*/
 
@@ -166,14 +175,14 @@ a:link
 
     .logo
     {
-        font-size: 2.5em;
+        font-size: 1.5em;
         padding-top: 1em;
     }
 }
 
 /*menu*/
 
-@media (min-width: 501px)
+@media (min-width: 833px)
 {
     ul 
     {
@@ -189,10 +198,15 @@ a:link
             /*flex-grow: 1;*/
         }
 
-        .menu_inscription2
+        .nav_menu2
         {
-            visibility: hidden;
+            float: right;
         }
+
+            .menu_inscription2
+            {
+                visibility: hidden;
+            }
 
         .menu
         {
@@ -222,7 +236,7 @@ a:link
             }
 }
 
-@media (max-width: 500px)
+@media (max-width: 832px)
 {
     ul 
     {
@@ -240,8 +254,8 @@ a:link
         {
             position: absolute;
             top: 0%;
-            right: 10%;
-            font-size: 2.5em;
+            right: 1em;
+            font-size: 1.5em;
             padding-top: 2.2em;
             color: #0065fc;
             float: inline-end;
@@ -260,7 +274,7 @@ a:link
             padding-top: 0em;
             padding-bottom: 1em;
             margin-bottom: 2em;
-            font-size: 2.5em;
+            font-size: 1.5em;
             text-align: center;
             /*flex-grow: 20;*/
         }
@@ -312,6 +326,7 @@ a:link
     padding: 0.6em;
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
+    margin-left: -3em;
 }
 
     .rechercher:hover
@@ -331,21 +346,24 @@ a:link
 
 @media (max-width: 500px)
 {
+    form
+    {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
     .logo_localisation
     {
-        margin-top: 1.5em;
-        padding-top: 0.6em;
-        padding-bottom: 0.6em;
-        padding-left: 1.2em;
-        padding-right: 1.2em;
-        font-size: 3em;
+        margin-top: 1.25em;
+        font-size: 1.45em;
+        width: 9%;
     }
     
     .localisation
     {
         margin-top: 1.5em;
-        width: auto;
-        font-size: 3em;
+        width: 80%;
+        font-size: 1.2em;
     }
     
     .rechercher
@@ -356,13 +374,15 @@ a:link
     .logo_rechercher
     {
         visibility: visible;
-        font-size: 3em;
+        margin-top: 1.8em;
+        margin-right: 1.5em;
+        font-size: 1em;
         color: white;
         background-color: #0065fc;
         border: 0em solid #0065fc;
-        padding: 0.7em;
-        margin: -3em;
+        padding: 1em;
         border-radius: 1em;
+        margin-left: 0;
     }
 }
 
@@ -385,6 +405,7 @@ a:link
     {
         margin: 0.5em;
         padding-right: 0.5em;
+        font-weight: bold;
         display: flex;
         align-items: center;
     }
@@ -435,7 +456,7 @@ a:link
                 padding-left: 0.3em;
             }
 
-@media (max-width: 500px)
+@media (max-width: 832px)
 {
     .filtres
     {
@@ -452,7 +473,7 @@ a:link
 
         .filtre2
         {
-            font-size: 2.5em;
+            font-size: 1.3em;
             font-weight: bold;
             margin: 0.5em;
             padding-right: 0.5em;
@@ -464,7 +485,7 @@ a:link
         {
             height: auto;
             width: auto;
-            font-size: 2.5em;
+            font-size: 1.1em;
             margin: 0.5em;
             padding-right: 1em;
             border: 0.1em solid #d9d9d9;
@@ -494,32 +515,23 @@ a:link
         margin-right: 1em;
     }
 
-    .info_text
-    {
-
-    }
-
 @media (max-width: 500px)
 {
-    .info
-    {
-
-    }
-   
+    
         .circle
         {
             border: 0.1em solid #d9d9d9;
-            height: 3em;
-            width: 3.5em;
+            height: 1.5em;
+            width: 1.75em;
             border-radius: 50%;
             text-align: center;
-            line-height: 2.6em;
+            line-height: 1.45em;
             float: none;
         }
             
             .fa-info
             {
-                font-size: 2em;
+                font-size: 1em;
                 line-height: 5em;
             
 
@@ -533,7 +545,7 @@ a:link
 
         .info_text
         {
-            font-size: 2.5em;
+            font-size: 1em;
         }
 }
 
@@ -659,6 +671,7 @@ a:link
                 .img1
                 {
                     max-width: 100%;
+                    object-fit: cover;
                     overflow: clip;
                     background-size: cover;
                     border-top-left-radius: 1em;
@@ -679,7 +692,7 @@ a:link
         height: auto;
         background-color: white;
         padding-top: 1.5em;
-        padding-bottom: 4em;
+        padding-bottom: 1em;
     }
 
         .sous_body1
@@ -691,7 +704,7 @@ a:link
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
             background-color: white;
             width: 100%;
-            height: 30em;
+            height: 15em;
 
             display: flex;
             flex-direction: column;
@@ -699,9 +712,9 @@ a:link
 
             .img1
             {
-                max-width: 100%;
+                max-height: 65%;
+                object-fit: cover;
                 overflow: clip;
-                background-size: cover; /*rogne l'image*/
                 border-top-left-radius: 1em;
                 border-top-right-radius: 1em;
             }
@@ -710,12 +723,20 @@ a:link
             {
                 padding: 0.6em;
                 line-height: 1.5em;
-                font-size: 2.5em;
+                font-size: 1em;
             }
         .afficher_plus
         {
-            font-size: 2em;
+            font-size: 1em;
         }
+}
+
+@media (min-width: 501px) and (max-width: 1200px)
+{
+    .img1
+    {
+        height: 80%;
+    }
 }
 
     .les_plus_populaires
@@ -738,8 +759,8 @@ a:link
         .les_plus_populaires
         {
             width: auto;
-            padding-left: 3em;
-            padding-right: 3em;
+            padding-left: 1em;
+            padding-right: 1em;
             padding-top: 1.5em;
             padding-bottom: 4em;
         }
@@ -797,10 +818,10 @@ a:link
                     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
                     background-color: white;
                     max-width: 30%;
-                    height: 10em;
+                    height: 15em;
 
                     display: flex;
-                    flex-flow: row;   
+                    flex-flow: column;   
                 }
 
             }
@@ -816,7 +837,7 @@ a:link
                     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
                     background-color: white;
                     width: inherit;
-                    height: 20em;
+                    height: 10em;
 
                     display: flex;
                     flex-flow: row;
@@ -837,12 +858,14 @@ a:link
                     {
                         .img2
                         {
-                            max-width: 30%;
-                            min-width: 30%;
+                            max-width: 100%;
+                            min-width: 100%;
+                            height: 80%;
+                            object-fit: cover;
                             overflow: clip;
-                            background-size: cover; /*rogne l'image*/
                             border-top-left-radius: 1em;
-                            border-bottom-left-radius: 1em;                         
+                            border-top-right-radius: 1em;
+                            border-bottom-left-radius: 0em;                         
                         }
                     }
 
@@ -859,7 +882,7 @@ a:link
                 {
                     .text2
                     {
-                        font-size: 2.5em;
+                        font-size: 1em;
                     }
                 }
 
@@ -945,7 +968,7 @@ a:link
         {
             .format_portrait, .format_deux_tiers, .format_demi, .format_tiers
             {
-                height: 30em;
+                height: 15em;
                 margin-bottom: 3em;
             }
         }
@@ -983,11 +1006,19 @@ a:link
                 }
             }
 
+            @media (max-width: 500px)
+            {
+                .img3_portrait, .img3_deux_tiers, .imag3_tiers, .img3_demi
+                {
+                    max-height: 80%;
+                }
+            }
+
                 @media (max-width: 500px)
                 {
                     .text3
                     {
-                        font-size: 2.5em;
+                        font-size: 1em;
                     }
                 }
 
@@ -1007,7 +1038,16 @@ footer
     padding-right: 3em;
 }
 
-    @media (min-width: 501px)
+@media (max-width: 500px)
+{
+    footer
+    {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+    @media (min-width: 833px)
     {
         .footer2
         {
@@ -1029,9 +1069,15 @@ footer
 
         @media (max-width: 500px)
         {
+            .colone
+            {
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+
             .text_footer
             {
-                font-size: 2em;
+                font-size: 1.5em;
                 line-height: 2em;
             }
         }
