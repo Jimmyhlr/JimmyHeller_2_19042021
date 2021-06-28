@@ -1089,7 +1089,6 @@ footer
         {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             align-content: left;
             margin: 0px auto;
             max-width: 1440px;
@@ -1099,7 +1098,7 @@ footer
         .colone
         {
             line-height: 2em; /*taille des espaces interlignes*/
-            width: auto;
+            width: 33%;
             padding-top: 2em;
             padding-bottom: 2em;
         }
