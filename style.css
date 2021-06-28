@@ -612,6 +612,13 @@ a:link
         
                 display: flex;
                 flex-direction: column;
+
+                transition: transform 0.2s;
+            }
+
+            .sous_body1:hover
+            {
+                transform: scale(1.1);
             }
 
                 .img1
@@ -668,6 +675,13 @@ a:link
         
                 display: flex;
                 flex-direction: column;
+
+                transition: transform 0.2s;
+            }
+
+            .sous_body1:hover
+            {
+                transform: scale(1.1);
             }
 
                 .img1
@@ -805,7 +819,14 @@ a:link
                     height: 10em;
 
                     display: flex;
-                    flex-flow: row;             
+                    flex-flow: row;    
+                    
+                    transition: transform 0.2s;
+                }
+
+                .sous_body2:hover
+                {
+                    transform: scale(1.1);
                 }
             }
 
@@ -824,8 +845,14 @@ a:link
 
                     display: flex;
                     flex-flow: column;   
+
+                    transition: transform 0.2s;
                 }
 
+                .sous_body2:hover
+                {
+                    transform: scale(1.1);
+                }
             }
 
             @media (max-width: 500px)
@@ -911,18 +938,25 @@ a:link
     @media (min-width: 501px)
     {
         .sous_body3
-            {
-                border-radius: 1em;
-                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
-                background-color: white;
-                width: 24%;
+        {
+            border-radius: 1em;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
+            background-color: white;
+            width: 24%;
 
-                overflow: clip;
-                object-fit: cover; /*rogne l'image*/
+            overflow: clip;
+            object-fit: cover; /*rogne l'image*/
 
-                display: flex;
-                flex-flow: column;
-            }
+            display: flex;
+            flex-flow: column;
+
+            transition: transform 0.2s;
+        }
+
+        .sous_body3:hover
+        {
+            transform: scale(1.1);
+        }
 
     }
 
