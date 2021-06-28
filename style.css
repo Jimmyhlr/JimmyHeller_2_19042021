@@ -12,6 +12,8 @@
 
     header, main
     {
+        margin: 0px auto;
+        max-width: 1440px;
         padding-left: 3em;
         padding-right: 3em;
         margin-bottom: 2em;
@@ -1055,7 +1057,8 @@ footer
             flex-direction: row;
             justify-content: space-between;
             align-content: left;
-            max-width: 80%;
+            margin: 0px auto;
+            max-width: 1440px;
         } 
     }
     
