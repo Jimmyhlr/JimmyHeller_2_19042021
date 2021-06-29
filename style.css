@@ -8,14 +8,14 @@
     src: url('raleway/static/Raleway-Medium.ttf');
 }
 
+body
+{
+    margin: 0px;
+    font-family: Railway-medium;    
+}
+
 @media (min-width: 833px)
 {
-    body
-    {
-        margin: 0px;
-        font-family: Railway-medium;
-    }
-
     header, main
     {
         margin: 0px auto;
@@ -28,13 +28,6 @@
 
 @media (max-width: 832px)
 {
-
-    body
-    {
-        margin: 0px;
-        font-family: Railway-medium;
-    }
-
     main
     {
         padding-left: 0em;
@@ -176,11 +169,6 @@ a:link
 
 @media (max-width: 500px)
 {
-    #haut_de_page
-    {
-        display: flex;
-    }
-
     .logo
     {
         font-size: 1.5em;
@@ -203,7 +191,6 @@ a:link
         {
             padding-top: 2.2em;
             color: #0065fc;
-            /*flex-grow: 1;*/
         }
 
         .nav_menu2
@@ -222,7 +209,6 @@ a:link
             padding-top: 3em;
             text-align: center;
             display: inline-block;
-            /*flex-grow: 20;*/
         }
 
         .menu2
@@ -426,6 +412,13 @@ a:link
         border-radius: 2em;
         display: flex;
         align-items: center;
+
+        transition: transform 0.2s;
+    }
+
+    .filtre:hover
+    {
+        transform: scale(1.1);
     }
 
         .blue_background
@@ -501,6 +494,8 @@ a:link
             display: flex;
             align-items: center;
         }
+
+        
 }
 
 /* information */
