@@ -132,7 +132,7 @@ a:link
     color: #0065fc;
 }
 
-.menu_inscription2 a
+.menu_inscription a
 {
     color: #0065fc;
 }
@@ -156,7 +156,17 @@ a:link
 #haut_de_page
 {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
+}
+
+@media (max-width: 520px)
+{
+    #haut_de_page
+    {
+        width: 100%;
+        display: initial;
+    }
 }
 
 .logo
@@ -173,13 +183,35 @@ a:link
     {
         font-size: 1.5em;
         padding-top: 1em;
+        padding-left: 1em;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 520px)
+{
+    .logo
+    {
+        margin-left: 1em;
     }
 }
 
 /*menu*/
 
-@media (min-width: 833px)
+.nav_menu1
 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0em;
+    padding: 0em;
+    flex-flow: row wrap;
+}
+
+.nav_menu2
+{
+    display: flex;
+    justify-content: space-around;
+}
+
     ul 
     {
         padding: 0;
@@ -189,19 +221,9 @@ a:link
 
         .menu_inscription
         {
-            padding-top: 2.2em;
+            padding-top: 3em;
             color: #0065fc;
         }
-
-        .nav_menu2
-        {
-            float: right;
-        }
-
-            .menu_inscription2
-            {
-                visibility: hidden;
-            }
 
         .menu
         {
@@ -211,80 +233,51 @@ a:link
             display: inline-block;
         }
 
-        .menu2
-        {
-            visibility: hidden;
-        }
-
             .menu_actif
             {
                 border-top: 0.2em solid #0065fc;
                 border-spacing: 2em;
             }
 
-            ::placeholder
-            {
-                opacity: 1;
-                font-weight: bolder;
-                color: black;
-            }
-}
 
-@media (max-width: 832px)
+
+@media (max-width: 520px)
 {
-    ul 
+    .menu_inscription
     {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
+        position: absolute;
+        top: 1.5em;
+        right: 2em;
     }
-            
-        .menu_inscription
-        {
-            visibility: hidden;
-        }
 
-        .menu_inscription2
-        {
-            position: absolute;
-            top: 0%;
-            right: 1em;
-            font-size: 1.5em;
-            padding-top: 2.2em;
-            color: #0065fc;
-            float: inline-end;
-            /*flex-grow: 1;*/
-        }
+    .menu
+    {
+        width: 50%;        
+    }
 
-        .menu
+    .nav_menu2
+    {
+        width: 100%;
+    }
+
+        .menu_actif
         {
-            visibility: hidden;
-        }
-            
-        .menu2
-        {
-            float: left;
-            width: 50%;
-            padding-top: 0em;
+            border-spacing: 2em;
+            border-top: none;
+            border-bottom: 0.2em solid #0065fc;
             padding-bottom: 1em;
-            margin-bottom: 2em;
-            font-size: 1.5em;
-            text-align: center;
+            margin-bottom: 1em;
+
         }
 
-            .menu_actif
-            {
-                border-top: none;
-                border-bottom: 0.2em solid #0065fc;
-                border-spacing: 2em;
-            }
-
-            .menu_inactif
-            {
-                border-top: none;
-                border-bottom: 0.2em solid #f1f1f1;
-                border-spacing: 2em;           
-            }
+        .menu_inactif
+        {
+            border-spacing: 2em;
+            border-top: none;
+            border-bottom: 0.2em solid #f1f1f1;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+        }
 }
 
 /*barre de recherche*/
@@ -330,6 +323,13 @@ a:link
         padding: 0.6em;
         border-top-right-radius: 0.5em;
         border-bottom-right-radius: 0.5em;
+    }
+
+    ::placeholder
+    {
+        opacity: 1;
+        font-weight: bolder;
+        color: black;
     }
 
 .logo_rechercher
