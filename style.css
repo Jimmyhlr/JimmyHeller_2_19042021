@@ -285,7 +285,7 @@ a:link
 .logo_localisation
 {
     background-color: #f1f1f1;
-    border: 0.1em solid #f1f1f1;
+    border: 0.1em solid #f1f1f1fa;
     padding-top: 0.325em;
     padding-bottom: 0.49em;
     padding-left: 0.6em;
@@ -299,7 +299,7 @@ a:link
 .localisation
 {
     padding: 0.6em;
-    border: 0.1em solid #f1f1f1;
+    border: 0.1em solid #f1f1f1fa;
     margin-right: -0.4em;
     width: 15em;
 }
@@ -308,7 +308,7 @@ a:link
 {
     color: white;
     background-color: #0065fc;
-    border: 0.1em solid #0065fc;
+    border: 0.1em solid #0065fa;
     padding: 0.6em;
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
@@ -319,7 +319,7 @@ a:link
     {
         color: white;
         background-color: #004ec2;
-        border: 0.1em solid #004ec2;
+        border: 0.1em solid #004ec1;
         padding: 0.6em;
         border-top-right-radius: 0.5em;
         border-bottom-right-radius: 0.5em;
@@ -372,7 +372,7 @@ a:link
         font-size: 1em;
         color: white;
         background-color: #0065fc;
-        border: 0em solid #0065fc;
+        border: 0em solid #0065fa;
         padding: 1em;
         border-radius: 1em;
         margin-left: 0;
@@ -597,7 +597,6 @@ a:link
                 .img1
                 {
                     max-width: 100%;
-                    overflow: clip;
                     object-fit: cover;
                     border-top-left-radius: 1em;
                     border-top-right-radius: 1em;
@@ -677,7 +676,6 @@ a:link
             {
                 max-height: 65%;
                 object-fit: cover;
-                overflow: clip;
                 border-top-left-radius: 1em;
                 border-top-right-radius: 1em;
             }
@@ -804,7 +802,6 @@ a:link
                 {
                     max-width: 40%;
                     min-width: 40%;
-                    overflow: clip;
                     object-fit: cover;
                     border-top-left-radius: 1em;
                     border-bottom-left-radius: 1em;
@@ -864,8 +861,7 @@ a:link
         border-radius: 1em;   
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.048);
         background-color: white;
-        overflow: clip;
-        object-fit: cover; /*rogne l'image*/
+        object-fit: cover;
         display: flex;
         flex-flow: column;
         transition: transform 0.2s;    
@@ -927,8 +923,8 @@ a:link
                 .img3
                 {
                     min-width: 100%;
-                    overflow: clip;
-                    object-fit: cover; /*rogne l'image*/
+                    max-width: 100%;
+                    object-fit: cover;
                     align-self: center;
                     border-top-left-radius: 1em;
                     border-top-right-radius: 1em;                   
@@ -939,6 +935,7 @@ a:link
                 .img3_portrait
                 {
                     max-height: 90%;
+                    min-height: 90%;
                 }
 
                 .img3_deux_tiers
@@ -1004,7 +1001,6 @@ footer
         {
             display: flex;
             flex-direction: row;
-            align-content: left;
             margin: 0px auto;
             max-width: 1440px;
         } 
